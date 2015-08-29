@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		04CC77E01B91842D0087C130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CC77DF1B91842D0087C130 /* main.m */; };
 		04CC77E31B91842D0087C130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CC77E21B91842D0087C130 /* AppDelegate.m */; };
-		04CC77E61B91842D0087C130 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CC77E51B91842D0087C130 /* ViewController.m */; };
-		04CC77E91B91842D0087C130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC77E71B91842D0087C130 /* Main.storyboard */; };
 		04CC77EB1B91842D0087C130 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC77EA1B91842D0087C130 /* Images.xcassets */; };
 		04CC77EE1B91842D0087C130 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CC77EC1B91842D0087C130 /* LaunchScreen.xib */; };
 		04CC77FA1B91842D0087C130 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CC77F91B91842D0087C130 /* __Tests.m */; };
+		04CC78071B91879B0087C130 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC78061B91879B0087C130 /* News.storyboard */; };
+		04CC780A1B9187E20087C130 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CC78091B9187E20087C130 /* NewsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		04CC77DF1B91842D0087C130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CC77E11B91842D0087C130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04CC77E21B91842D0087C130 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04CC77E41B91842D0087C130 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04CC77E51B91842D0087C130 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04CC77E81B91842D0087C130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CC77EA1B91842D0087C130 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04CC77ED1B91842D0087C130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04CC77F31B91842D0087C130 /* 新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC77F81B91842D0087C130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CC77F91B91842D0087C130 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		04CC78061B91879B0087C130 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		04CC78081B9187E20087C130 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		04CC78091B9187E20087C130 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,9 @@
 		04CC77DC1B91842D0087C130 /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				04CC78031B91875B0087C130 /* Classes */,
 				04CC77E11B91842D0087C130 /* AppDelegate.h */,
 				04CC77E21B91842D0087C130 /* AppDelegate.m */,
-				04CC77E41B91842D0087C130 /* ViewController.h */,
-				04CC77E51B91842D0087C130 /* ViewController.m */,
-				04CC77E71B91842D0087C130 /* Main.storyboard */,
 				04CC77EA1B91842D0087C130 /* Images.xcassets */,
 				04CC77EC1B91842D0087C130 /* LaunchScreen.xib */,
 				04CC77DD1B91842D0087C130 /* Supporting Files */,
@@ -117,6 +115,32 @@
 				04CC77F81B91842D0087C130 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04CC78031B91875B0087C130 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04CC78041B91875B0087C130 /* News */,
+				04CC78051B91875B0087C130 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04CC78041B91875B0087C130 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				04CC78061B91879B0087C130 /* News.storyboard */,
+				04CC78081B9187E20087C130 /* NewsTableViewController.h */,
+				04CC78091B9187E20087C130 /* NewsTableViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		04CC78051B91875B0087C130 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CC77E91B91842D0087C130 /* Main.storyboard in Resources */,
 				04CC77EE1B91842D0087C130 /* LaunchScreen.xib in Resources */,
+				04CC78071B91879B0087C130 /* News.storyboard in Resources */,
 				04CC77EB1B91842D0087C130 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CC77E61B91842D0087C130 /* ViewController.m in Sources */,
+				04CC780A1B9187E20087C130 /* NewsTableViewController.m in Sources */,
 				04CC77E31B91842D0087C130 /* AppDelegate.m in Sources */,
 				04CC77E01B91842D0087C130 /* main.m in Sources */,
 			);
@@ -244,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04CC77E71B91842D0087C130 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CC77E81B91842D0087C130 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04CC77EC1B91842D0087C130 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
